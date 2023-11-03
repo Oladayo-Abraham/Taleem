@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#all{
+    background: linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.8)),url('girl.avif');
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    color: white;
+}
+#nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+}
+#items{
+    display: flex;
+}
+#icon{
+    display: flex;
+}
+li{
+    list-style-type: none;
+}
+#logo{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+#items>li{
+    padding: 0px 20px;
+}
+#icon>li{
+    padding: 10px;
+    margin: 0px 10px;
+    border: 2px solid white;
+    width: fit-content;
+    border-radius: 50%;
+
+}
+#home{
+    border-top: 3px solid palevioletred;
+}
+#caption{
+    color: white;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 180px;
+}
+#school{
+    font-size: 45px;
+    padding-bottom: 10px;
+}
+#educate{
+    color: palevioletred;
+    padding-bottom: 15px;
+}
+#lorem{
+    font-size: 15px;
+}
+#bars{
+    background-color: palevioletred;
+    text-align: center;
+    padding: 10px 0px;
+    color: white;
+}
+#serve{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+.school{
+    color: palevioletred;
+}
+#services{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 35px 0px;
+}
+#temp{
+    padding-top: 10px;
+}
+#firstbox{
+    width: 300px;
+    height: 280px;
+    border: 2px solid grey;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.4);
+    text-align: center;
+    padding: 15px 5px;
+}
+#firstly i{
+    border: 2px solid grey;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: grey;
+    margin: 10px 0px;
+
+}
+#firstbox h3{
+    padding-bottom: 15px;
+}
+#firstbox p{
+    color: grey;
+    padding-top: 20px;
+}
+#root{
+    display: flex;
+    justify-content: space-around;
+}
+#drop{
+    display: none;
+}
+
+/* css responsiveness */
+@media(max-width:1076px){
+    #items{
+        display: none;
+    }
+    #icon{
+        display: none;
+    }
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content{
+        position: absolute;
+        display: none;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    #drop{
+        display: block;
+    }
+}
+
+@media(max-width:917px){
+    #root{
+        flex-wrap: wrap;
+    }
+    #firstbox{
+        margin: 10px 20px;
+        
+
+    }
+}
